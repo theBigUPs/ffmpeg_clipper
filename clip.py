@@ -35,20 +35,20 @@ def clip_video_nvenc(input_path, output_path, output_format='mp4', crf=23, max_f
 
 if __name__ == "__main__":
     input_path=f"""F:\\downloads\\res2.mp4"""
-    output_path=f"result/clip.mp4"
+    output_path=f"result/syth goes off on critical grifter and co.mp4"
     output_format=f"mp4"
     resolution="1280x720"
     framerate=30
 
-    start_time_hours = 5
-    start_time_minutes = 5
-    start_time_seconds = 15
+    start_time_hours = 2
+    start_time_minutes = 28
+    start_time_seconds = 18
     start_time_in_seconds = start_time_hours*3600 + start_time_minutes*60 + start_time_seconds
-
-    duration_time_hours = 0
-    duration_time_minutes = 4
-    duration_time_seconds = 9
-    duration_time_in_seconds = duration_time_hours*3600 + duration_time_minutes*60 + duration_time_seconds
+    #0 2 7
+    end_time_hours = 2
+    end_time_minutes = 30
+    end_time_seconds = 25
+    duration_time_in_seconds = (end_time_hours-start_time_hours)*3600 + (end_time_minutes-start_time_minutes)*60 + (end_time_seconds-start_time_seconds)
 
     prev=datetime.datetime.now()
     
